@@ -1,0 +1,439 @@
+:root{
+    --primary: #0f1223;
+    --white: #e9ecef;
+    --gray: #6c757d;
+    --green: #007f5f;
+    --red: #ef233c;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+    background-color: var(--primary);
+    color: var(--primary);
+    font-family: 'Roboto', sans-serif;
+    background-image: url(./img/nubes.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    border-bottom: solid 0.1rem var(--gray);
+    padding-bottom: 1rem;
+}
+
+h2{
+    color: var(--primary);
+    border-bottom: solid 0.1rem var(--gray);
+    padding: 0.5rem;
+}
+
+label{
+    color: var(--gray);
+    font-weight: 500;
+}
+
+*, 
+*::before, 
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/********************************************** APP CONTAINER ********************************/
+
+.container-cards{
+    max-width: 90%;
+    margin: auto;
+}
+
+/********* AREA CREATE USER *******/
+
+.position-question-gif{
+    display: flex;
+    gap: 1rem;
+}
+
+.users{
+    color: var(--white);
+    border: none;
+}
+
+.duck-cry{
+    width: 4rem;
+    height: 4rem;
+}
+
+.color-hi-users{
+    color: var(--primary);
+}
+
+.create-user{
+    display: flex;
+    justify-content: space-between;
+    text-align: end;
+    padding: 3rem 2rem 1rem 2rem ;
+}
+
+.create-user i{
+    color: var(--green);
+}
+
+.btn-create{
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    height: 4rem;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 0px 13px 3px rgba(0,0,0,0.97);
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.btn-create:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    
+}
+
+/******** SNORLAX GIFS ***************/
+
+.snorlax-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 43rem) {
+    .snorlax-center{
+        padding-top: 50%;
+    }
+
+    .snorlax-img{
+        width: 100%;
+    }
+}
+
+/******************************************** USERS FORM COMPONENT ******************************************/
+
+.form-container{
+    background-color: rgba(0, 0, 0, 0.308);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);  
+    box-shadow: 0px 0px 13px 3px rgba(0,0,0,0.97);
+    z-index: 100;
+}
+
+.card-form{
+    background-color: var(--white);
+    display: flex; 
+    flex-direction: column;
+    padding: 3rem;
+    border-radius: 1rem 1rem 0 0;
+    width: 35rem;
+}
+
+.container-closed-btn-form{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.btn-closed{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-closed i{
+    font-size: 3rem;
+    color: var(--red);
+}
+
+.btn-closed i:hover{
+    color: #eb495c;
+}
+
+.description-form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: auto;
+    width: 100%;
+}
+
+.input{
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.container-btn-form{
+    display: flex;
+}
+
+.btn-form{
+    padding: 1rem;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.btn-submit{
+    background-color: var(--green);
+    width: 90%;
+    border-radius: 0 0 0rem 1rem;
+}
+
+.btn-submit:hover{
+    background-color: #159b7a;
+}
+
+.btn-clear{
+    background-color: var(--red);
+    border-radius: 0 0 1rem 0;
+}
+
+.btn-clear:hover{
+    background-color: #eb495c;
+}
+
+/******************************************** USER LIST COMPONENT ***********************************/
+
+.item-card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style: none;
+    padding: 2rem;
+    gap: 3rem;
+    overflow-y: auto;
+}
+
+.color-card{
+    height: 21rem;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: 0px 0px 13px 3px rgba(0,0,0,0.97);
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.color-card:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.user-card{
+    width: 25rem;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--white);
+    padding: 1.5rem;
+    text-align: start;
+    border-radius: 1rem 1rem 0 0;
+    margin-top: 3rem;
+    box-shadow: 0px 0px 13px 3px rgba(0,0,0,0.5);
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.user-card:hover{
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+
+.description-card{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.email-list{
+    color: var(--gray);
+}
+
+.email-list i{
+    padding-right: 1rem;
+}
+
+.birthday-list i{
+    color: #ef476f;
+    padding-right: 0.5rem;
+}
+
+
+.area-btn-edit-del{
+    display: flex;
+    align-self: flex-end;
+    padding: 0.5 1rem;
+    gap: 1rem;
+}
+
+.btn{
+    border: solid 0.1rem var(--gray);
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    width: 3rem;
+}
+
+.btn i{
+    color: var(--gray);
+    font-size: 1rem;
+}
+
+.btn:hover{
+    background-color: #007f5f2c;
+}
+
+
+/****************************************** ENTER PASSWORD COMPONENT ****************************************/
+
+.password-form{
+    background-color: rgba(0, 0, 0, 0.308);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);  
+    box-shadow: 0px 0px 13px 3px rgba(0,0,0,0.97);
+    z-index: 100;
+}
+
+.add-password-card{
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    border-radius: 1rem 1rem 0 0;
+    width: 35rem;
+}
+
+.btn-container-pass-closed{
+    text-align: end;
+    padding-bottom: 2rem ;
+}
+
+.btn-closed-pass{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-closed-pass i{
+    font-size: 3rem;
+    color: var(--red);
+}
+
+.btn-closed-pass i:hover{
+    color: #eb495c;
+}
+
+.label-pass{
+    color: var(--primary);
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.container-password-form{
+    display: flex;
+}
+
+.input-password-form{
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    width: 90%;
+}
+
+.btn-show-hide-form{
+    background-color: var(--gray);
+    color: var(--white);
+    border: none;
+    width: 10%;
+    cursor: pointer;
+}
+
+.btn-submit-pass{
+    background-color: var(--green);
+    width: 100%;
+    border-radius: 0 0 1rem 1rem;
+    color: var(--white);
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-submit-pass:hover{
+    background-color: #159b7a;
+}
+
+.btn-submit-pass i{
+    font-size: 3rem;
+}
+
+/********************************** POP COMPONENTS *****************************************************/
+
+.container-succcess{
+    background-color: rgba(0, 0, 0, 0.308);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px); 
+    z-index: 200;
+}
+
+.card-pop{
+    text-align: center;
+    background-color: #e1f4e5;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--green);
+}
+
+.success-gif{
+    width: 20rem;
+}
+
+.card-pass-pop{
+    text-align: center;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #c45c68;
+}
+
+
+
+
