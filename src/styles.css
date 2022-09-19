@@ -1,4 +1,5 @@
 :root{
+    --theme: rgba(0,212,255,1);
     --primary: #0f1223;
     --white: #e9ecef;
     --gray: #6c757d;
@@ -12,7 +13,7 @@ html{
 
 body{
     font-size: 16px;
-    background-color: var(--primary);
+    background: var(--theme);
     color: var(--primary);
     font-family: 'Roboto', sans-serif;
     background-image: url(./img/nubes.png);
@@ -87,10 +88,11 @@ label{
 .btn-create{
     padding: 0.5rem 1rem;
     border-radius: 1rem;
-    height: 4rem;
+    height: 5rem;
     cursor: pointer;
     border: none;
     box-shadow: 0px 0px 13px 3px rgba(0,0,0,0.97);
+    border: solid 0.5rem black;
     transform: scale(1);
     transition: 0.5s;
 }
@@ -132,7 +134,6 @@ label{
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(2px);  
-    box-shadow: 0px 0px 13px 3px rgba(0,0,0,0.97);
     z-index: 100;
 }
 
@@ -143,6 +144,8 @@ label{
     padding: 3rem;
     border-radius: 1rem 1rem 0 0;
     width: 35rem;
+    box-shadow: 0px 0px 13px 3px rgba(0,0,0,0.97);
+    border: solid 0.5rem black;
 }
 
 .container-closed-btn-form{
@@ -178,6 +181,7 @@ label{
     font-size: 1.6rem;
     padding: 0.5rem;
     width: 100%;
+    border: solid 0.5rem black;
 }
 
 .container-btn-form{
@@ -198,6 +202,10 @@ label{
     background-color: var(--green);
     width: 90%;
     border-radius: 0 0 0rem 1rem;
+    border-bottom: solid 0.5rem black;
+    border-left: solid 0.5rem black;
+    border-right: solid 0.5rem black;
+    box-shadow: 0px 13px 32px 5px rgba(0,0,0,0.6);
 }
 
 .btn-submit:hover{
@@ -207,6 +215,9 @@ label{
 .btn-clear{
     background-color: var(--red);
     border-radius: 0 0 1rem 0;
+    border-bottom: solid 0.5rem black;
+    border-right: solid 0.5rem black;
+    box-shadow: 0px 13px 32px 5px rgba(0,0,0,0.6);
 }
 
 .btn-clear:hover{
@@ -222,7 +233,6 @@ label{
     list-style: none;
     padding: 2rem;
     gap: 3rem;
-    overflow-y: auto;
 }
 
 .color-card{
@@ -249,7 +259,8 @@ label{
     text-align: start;
     border-radius: 1rem 1rem 0 0;
     margin-top: 3rem;
-    box-shadow: 0px 0px 13px 3px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 13px 3px rgba(0,0,0,0.97);
+    border: solid 0.5rem black;
     transform: scale(1);
     transition: 0.5s;
 }
@@ -317,8 +328,7 @@ label{
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(2px);  
-    box-shadow: 0px 0px 13px 3px rgba(0,0,0,0.97);
+    backdrop-filter: blur(2px);
     z-index: 100;
 }
 
@@ -329,6 +339,8 @@ label{
     padding: 3rem;
     border-radius: 1rem 1rem 0 0;
     width: 35rem;
+    box-shadow: 0px 0px 13px 3px rgba(0,0,0,0.97);
+    border: solid 0.5rem black;
 }
 
 .btn-container-pass-closed{
@@ -366,6 +378,7 @@ label{
     font-size: 1.6rem;
     padding: 0.5rem;
     width: 90%;
+    border: solid 0.5rem black;
 }
 
 .btn-show-hide-form{
@@ -374,6 +387,10 @@ label{
     border: none;
     width: 10%;
     cursor: pointer;
+    border-top: solid 0.5rem black;
+    border-bottom: solid 0.5rem black;
+    border-right: solid 0.5rem black;
+    
 }
 
 .btn-submit-pass{
@@ -382,8 +399,11 @@ label{
     border-radius: 0 0 1rem 1rem;
     color: var(--white);
     padding: 1rem;
-    border: none;
+    border-bottom: solid 0.5rem black;
+    border-left: solid 0.5rem black;
+    border-right: solid 0.5rem black;
     cursor: pointer;
+    box-shadow: 0px 13px 32px 5px rgba(0,0,0,0.6);
 }
 
 .btn-submit-pass:hover{
