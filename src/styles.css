@@ -63,6 +63,7 @@ label{
 .users{
     color: var(--white);
     border: none;
+    text-shadow: 0px 0px 18px black;
 }
 
 .duck-cry{
