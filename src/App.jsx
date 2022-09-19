@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import UpdatePop from './components/UpdatePop'
-import EnterPassword from './components/enterPassword'
+import EnterPassword from './components/EnterPassword'
 import SuccessfulPop from './components/SuccessfulPop'
 import UsersForm from './components/UsersForm'
 import UsersList from './components/UsersList'
