@@ -16,7 +16,7 @@ body{
     background: var(--theme);
     color: var(--primary);
     font-family: 'Roboto', sans-serif;
-    background-image: url(./public/img/nubes.png);
+    background-image: url(../public/img/nubes.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
